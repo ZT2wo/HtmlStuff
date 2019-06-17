@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="animate.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <script src="lib/anime.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <div id="header">
+        <div id="headText">ZT2wo</div>
+        <div id="nav"><a href="index.html">Home</a></div>
+        <div id="nav"><a href="projects.html">Projects</a></div>
+        <div id="nav">Contact</div>
+    </div>
+	<script type="text/javascript" src="sketch.js"></script>
+    <script>
+        anime({
+        targets: '#header',
+        duration: 2000,
+        borderRadius: ['0%', '100px'],
+        translateY: ['-200px', '0px']
+        });
+    </script>
+</body>
+</html>
+
