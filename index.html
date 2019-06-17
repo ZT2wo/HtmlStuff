@@ -1,32 +1,28 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
-
-{% seo %}
-  </head>
-
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>TEST{{ site.title | default: site.github.repository_name }}</h1>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-
-        <section id="downloads">
-          <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <canvas data-processing-sources="sketch.pde"></canvas>
-      </section>
+<head>
+    <meta charset="utf-8" />
+    <link href="animate.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <script src="lib/anime.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <div id="test">
+        <div id="headText">ZT2wo</div>
+        <div id="nav"><a href="index.html">Home</a></div>
+        <div id="nav"><a href="projects.html">Projects</a></div>
+        <div id="nav">Contact</div>
     </div>
-  </body>
+    
+    <script>
+        anime({
+        targets: '#test',
+        duration: 2000,
+        borderRadius: ['0%', '100px'],
+        translateY: ['-200px', '0px']
+        });
+    </script>
+</body>
 </html>
+
