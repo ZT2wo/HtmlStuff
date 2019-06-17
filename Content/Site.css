@@ -1,0 +1,41 @@
+﻿html {
+    background-color: #2f333a;
+}
+body {
+    text-align: center;
+}
+#test {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    background-color: aquamarine;
+}
+#headText {
+    font-size: 100px;
+}
+#nav {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    justify-content: center;
+}
+.Project-Item {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 5%;
+    background-color: #2f333a;
+}
+img {
+    width:100%
+}
+#itemTitle {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Impact', Charcoal, sans-serif;
+}
