@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <link href="animate.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
-    <script src="lib/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     <title></title>
 </head>
 <body>
-    <div id="test">
+    <div id="Banner">
         <div id="headText">ZT2wo</div>
         <div id="nav"><a href="index.html">Home</a></div>
         <div id="nav"><a href="projects.html">Projects</a></div>
@@ -17,10 +17,11 @@
     
     <script>
         anime({
-        targets: '#test',
+        targets: '#Banner',
         duration: 2000,
         borderRadius: ['0%', '100px'],
-        translateY: ['-200px', '0px']
+        translateY: ['-200px', '0px'],
+        backgroundColor: "#52FFB8"
         });
     </script>
 </body>

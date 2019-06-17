@@ -1,14 +1,15 @@
 ﻿html {
-    background-color: #2f333a;
+    background-color: #615756;
 }
 body {
     text-align: center;
 }
-#test {
+#Banner {
     display: inline-block;
     height: 100%;
     width: 50%;
-    background-color: aquamarine;
+    background-color: #52FFB8;
+    border-radius: 20px;
 }
 #headText {
     font-size: 100px;
@@ -29,7 +30,7 @@ body {
     border: 1px solid #fff;
     border-radius: 20px;
     padding: 5%;
-    background-color: #2f333a;
+    background-color: #539987;
 }
 img {
     width:100%
