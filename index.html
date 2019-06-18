@@ -4,26 +4,34 @@
     <meta charset="utf-8" />
     <link href="animate.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="Scripts/animateStore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>   
     <title></title>
 </head>
 <body>
     <div id="Banner">
         <div id="headText">ZT2wo</div>
-        <div id="index" class="nav"><a href="index.html">Home</a></div>
-        <div id="projects" class="nav"><a href="projects.html">Projects</a></div>
-        <div id="contact" class="nav">Contact</div>
+        <button id="index" class="btn btn1" onclick='ToggleDis("itemGrid")'>Home</button>
+        <button id="projects" class="btn btn2" onclick='ToggleDis("itemGrid")'>Projects</button>
+        <button id="contacts" class="btn btn3" onclick='ToggleDis("itemGrid")'>Contact</button>
     </div>
-    
-    <script>
-        anime({
-        targets: '#Banner',
-        duration: 2000,
-        borderRadius: ['0%', '100px'],
-        translateY: ['-200px', '0px'],
-        backgroundColor: "#52FFB8"
-        });
-    </script>
+    <div class="grid-container" id="itemGrid">
+        <div class="Project-Item item1">
+            <div id="itemTitle">SpiderGwen</div>
+            <a href="https://twitter.com/antred71/status/1084475010058780677"><img src="images\SpiderGwen LC Final.png" title="SpiderGwen Portrait"/></a>
+        </div>
+        <div class="Project-Item item2">
+            <div id="itemTitle">9anime2Txt</div>
+            <a href="https://github.com/ZT2wo/9aniTxt"><img class="projectImg" src="images/9aniTxt.png" title="9anime Watchlist Converter"></a>
+        </div>
+        <div class="Project-Item item3"></div>
+        <div class="Project-Item item4"></div>
+        <div class="Project-Item item5"></div>
+        <div class="Project-Item item6"></div>
+        <div class="Project-Item item7"></div>
+        <div class="Project-Item item8"></div>
+        <div class="Project-Item item9"></div>
+    </div>
 </body>
 </html>
 
