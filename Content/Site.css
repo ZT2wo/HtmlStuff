@@ -1,5 +1,5 @@
 ﻿html {
-    background-color: #615756;
+    background-color: #36382E;
 }
 body {
     text-align: center;
@@ -14,23 +14,23 @@ body {
 #headText {
     font-size: 10vh;
 }
-#nav {
-    display: inline;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.grid-container {
-    display: grid;
+#itemGrid {
+    display: none;
     grid-template-columns: 10% 10% 10%;
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 10px;
     justify-content: center;
+    transition: 0.8s;
 }
 .Project-Item {
-    border: 1px solid #fff;
+    border: 1px solid #36382E;
     border-radius: 20px;
     padding: 5%;
     background-color: #539987;
+    transition: 0.5s;
+}
+.Project-Item:hover {
+    border: 2px solid #fff;
 }
 img {
     width:100%
@@ -39,4 +39,19 @@ img {
     font-size: 1.5vw;
     font-weight: 500;
     font-family: 'Impact', Charcoal, sans-serif;
+}
+.btn {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #36382E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: none;
+    font-family: 'Impact', Charcoal, sans-serif;
+    font-size: 1.5vw;
+    transition: 0.8s;
+}
+.btn:hover {
+    color: #F06449;
 }
