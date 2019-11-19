@@ -1,0 +1,29 @@
+html,
+body {
+
+  background: #000;
+  padding: 0px;
+  margin: 0px;
+}
+
+#info {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 20px;
+  user-select: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
