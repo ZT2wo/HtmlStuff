@@ -15,7 +15,7 @@ points = [];
 dots = [];
 lines = 7;
 nt = 0;
-hueBase = 250;
+hueBase = 150;
 satBase = 60;
 
 function pushPoints() {
