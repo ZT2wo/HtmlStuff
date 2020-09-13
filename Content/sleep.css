@@ -1,0 +1,125 @@
+:root {
+    --color-1: #e4cfff;
+    --color-2: #8EEFFB;
+}
+
+@keyframes radious {
+
+    100%,
+    0% {
+        border-radius: 35% 65% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    20% {
+        border-radius: 35% 65% 50% 50% / 35% 65% 35% 65%;
+    }
+
+    40% {
+        border-radius: 35% 65% 65% 35% / 65% 50% 50% 35%;
+    }
+
+    60% {
+        border-radius: 35% 65% 50% 50% / 30% 30% 70% 70%;
+    }
+
+    80% {
+        border-radius: 40% 60% 40% 60% / 40% 50% 50% 60%;
+    }
+}
+
+@keyframes blob_a {
+
+    100%,
+    0% {
+        transform: none;
+    }
+
+    50% {
+        transform: translate(-40%, -40%) rotate(-100deg) rotatex(50deg) scale(2.2);
+    }
+}
+
+@keyframes blob_b {
+
+    100%,
+    0% {
+        transform: none;
+    }
+
+    50% {
+        transform: translate(60%, 20%) rotate(-200deg) scale(1.1);
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.box .wave {
+    display: hidden;
+    position: relative;
+    opacity: 0.95;
+    width: 100%;
+    z-index: 1;
+    filter: brightness(.78);
+}
+
+.box img.wave[src*="bottom"] {
+    position: absolute;
+    bottom: 0;
+    bottom: -20px;
+}
+
+.box img.wave[src*="top"] {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    top: -15px;
+}
+
+.box .inner {
+    position: relative;
+    z-index: 1;
+}
+
+.box .inner h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 6.4em;
+    position: relative;
+    text-align: center;
+    left: -40px;
+    color: #8eeffb;
+    text-shadow: -5px 12px 12px rgba(0, 0, 0, .6);
+}
+
+.box .blob b {
+    position: absolute;
+    height: 700px;
+    width: 500px;
+    top: 55%;
+    left: 83%;
+    background-image: linear-gradient(to right, var(--color-1) 47%, var(--color-2) 78%, var(--color-1) 100%);
+    border-radius: 90% 70% 100% 75%;
+    animation:
+        transform 25s ease-in-out infinite both alternate,
+        blob_a 60s ease-in-out infinite both;
+}
+
+.box .blob b:first-child {
+    width: 1000px;
+    height: 1000px;
+    top: -250px;
+    background-image: linear-gradient(to bottom, var(--color-2) 10%, var(--color-1) 37%, var(--color-2) 58%, var(--color-1) 78%, var(--color-2) 100%);
+    left: -950px;
+    transform: rotate(-180deg);
+    animation:
+        radious 30s ease-in-out infinite both alternate,
+        blob_b 60s ease-in-out infinite both;
+}

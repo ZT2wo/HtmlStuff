@@ -13,10 +13,10 @@ window.onresize = function () {
 
 points = [];
 dots = [];
-lines = 7;
+lines = 4;
 nt = 0;
-hueBase = 250;
-satBase = 60;
+hueBase = 135;
+satBase = 80;
 
 function pushPoints() {
   for (var i = 0; i < lines; i++) {

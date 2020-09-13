@@ -1,12 +1,15 @@
 ﻿html {
     background-color: #36382E;
 }
+
 body {
     text-align: center;
     overflow: hidden;
 }
+
 #Banner {
     display: inline-block;
+    justify-content: center;
     text-align: center;
     height: 100%;
     width: 50%;
@@ -14,9 +17,11 @@ body {
     border-radius: 20px;
     overflow: hidden;
 }
+
 #headText {
     font-size: 10vh;
 }
+
 #itemGrid {
     display: none;
     grid-template-columns: 10% 10% 10%;
@@ -25,48 +30,54 @@ body {
     justify-content: center;
     transition: 0.8s;
 }
+
 .Project-Item {
-    border: 1px solid #36382E;
+    border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 20px;
     padding: 5%;
     background-color: #539987;
     transition: 0.5s;
 }
+
 .Project-Item:hover {
     border: 2px solid #fff;
 }
+
 img {
-    width:100%
+    width: 100%
 }
+
 #itemTitle {
     font-size: 1.5vw;
     font-weight: 500;
     font-family: 'Impact', Charcoal, sans-serif;
 }
+
+/* #buttons {
+    padding-left: 2%;
+} */
+
 .btn {
     text-align: center;
-    background: none;
-    color: #EF4523;
-    border: 2px solid #36382E;
+    border-bottom: 2px solid #36382E;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: none;
     font-family: 'Impact', Charcoal, sans-serif;
     font-size: 1.5vw;
     transition: 0.8s;
     overflow: hidden;
     z-index: 2;
 }
+
 .btn::before {
     content: "";
     position: absolute;
     background-clip: padding-box;
-    height:3.7vh;
-    width:100%;
-    background-color: #EF4523;
+    height: 3.7vh;
     transition: 0.8s;
     z-index: 1;
 }
+
 .btn:hover {
     color: #EF4523;
 }
